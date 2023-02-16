@@ -50,12 +50,12 @@ app.post('/send-email', (req, res) => {
       ],
     })
     .then(res => {
-      console.log(res)
+      console.log(res, 'worked')
         
     })
     .catch(err => {
       res.status(500).send({ message: 'Error sending email' })
-      console.log(err)
+      console.log(err, 'failed')
     })
 })
 
