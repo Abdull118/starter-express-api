@@ -49,6 +49,7 @@ app.post('/send-email', (req, res) => {
     })
     .then(res => {
       console.log(res)
+        return(res.status(200))
     })
     .catch(err => {
       res.status(500).send({ message: 'Error sending email' })
