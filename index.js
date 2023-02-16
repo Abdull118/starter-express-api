@@ -27,7 +27,7 @@ app.post('/send-email', (req, res) => {
       Messages: [
         {
           From: {
-            Email: email,
+            Email: 'naimi.airsh@gmail.com',
             Name: name,
           },
           To: [
@@ -41,7 +41,7 @@ app.post('/send-email', (req, res) => {
           HTMLPart: `
             <h3>Service Request</h3>
             <p>Name: ${name}</p>
-            <p>Email: naimi.airsh@gmail.com</p>
+            <p>Email: ${email}</p>
             <p>Service Requested: ${serviceRequested}</p>
             <p>Description: ${description}
             <p>Phone: ${phone}</p>
